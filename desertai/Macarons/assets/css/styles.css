@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box ;
 }
+
 
 /* HEADER  */
 .headerNav {
@@ -28,8 +29,6 @@
   font-style: italic;
   font-family: "Fuzzy Bubbles", cursive;
   display: flex;
-  color: rgb(117, 52, 71);
-  cursor: pointer;
 }
 
 .headerNav .navi {
@@ -56,23 +55,32 @@
   font-size: 18px;
 }
 
+
+
 /* nav hover efektai */
 
-.headerNav .navi .item:hover {
+
+.headerNav .navi .item:hover{
   border-bottom: 3px solid black;
   transform: translateY(-5px);
   transition: all 0.1s ease-in-out;
+ 
+
+ 
 }
 
-.headerNav .navi .item:hover:nth-child(2) {
+.headerNav .navi .item:hover:nth-child(2){
   transform: translateX(0px);
   border-bottom: none;
+  
 }
 
-.headerNav .navi .item:hover:nth-child(2) .fa-solid {
-  opacity: 1;
-  transition: 0.3s ease-in;
+.headerNav .navi .item:hover:nth-child(2) .fa-solid{
+ opacity: 1;
+ transition: 0.3s ease-in;
+  
 }
+
 
 .headerNav .navi .dropDown > li:hover {
   border-bottom: 3px solid black;
@@ -80,7 +88,9 @@
   transition: all 0.1s ease-in-out;
 }
 
+
 /*  */
+
 
 .headerNav .navi .dropDown {
   display: flex;
@@ -90,7 +100,7 @@
   list-style: none;
   border-radius: 10px;
   padding: 10px;
-  background-image: linear-gradient(120deg, #f6d365, #fda086);
+    background-image: linear-gradient(120deg, #f6d365, #fda086);
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   height: 20vh;
@@ -105,6 +115,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+ 
 }
 
 .active {
@@ -119,12 +130,16 @@
   margin-left: 5px;
   transition: transform 0.5s;
   opacity: 0.6;
+  
+  
 }
 
 .rotate {
   transform: rotate(180deg);
   transform-origin: center;
-  opacity: 1;
+  opacity:1;
+  
+
 }
 
 /* BURGER */
@@ -145,63 +160,40 @@
   display: none;
 }
 
-.container-fluid.dukTurinys {
-  background-image: linear-gradient(90deg, #f6d365, #fda086);
-  overflow: auto;
+.container-fluid.header .turinys {
+  height: 8vh;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.container-fluid.dukTurinys .turinys {
-  background-color: #fff;
-  border-radius: 20px;
-  border: 2px solid black;
-  padding: 20px;
-  height: 88vh;
-  overflow: auto;
+.container-fluid.tabai .mygtukai {
+  height: 8vh;
+  background-color: #f6d365;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.turinys::-webkit-scrollbar {
-  display: block;
-  width: 5px;
-  width: 7px;
-}
-.turinys::-webkit-scrollbar-track {
-  background: transparent;
+.container-fluid.tabai .mygtukai button {
+  width: 25%;
+  height: 50%;
 }
 
-.turinys::-webkit-scrollbar-thumb {
-  background-color: rgba(117, 52, 71, 0.7);
-  border-right: none;
-  border-left: none;
-  border-radius: 20px;
+
+.veikia1 {
+  display: block!important;
 }
 
-.turinys::-webkit-scrollbar-track-piece:end {
-  background: transparent;
-  margin-bottom: 10px;
-}
+.container-fluid.tabai .turinys{
 
-.turinys::-webkit-scrollbar-track-piece:start {
-  background: transparent;
-  margin-top: 10px;
-}
+  height: 72vh;
+  display: none;
+  
+  }
 
-.container-fluid.dukTurinys h1 {
-  text-align: center;
-  font-family: "Fuzzy Bubbles", cursive;
-  color: rgb(117, 52, 71);
-  font-weight: 600;
-  border-bottom: 2px solid black;
-  padding-bottom: 9px;
-}
-.container-fluid.dukTurinys h6 {
-  margin: 25px 0;
-  font-weight: bold;
-  color: rgb(117, 52, 71);
-}
-
-.container-fluid.dukTurinys p {
-  font-family: "Satisfy", cursive;
-}
 
 .container-fluid.footer {
   width: 100%;
@@ -209,32 +201,18 @@
   background-image: linear-gradient(120deg, #f6d365, #fda086);
 }
 
-.container-fluid.footer p {
-  font-size: 12px;
-}
 
-.container-fluid.dukTurinys a {
-  text-decoration: none;
-  color: rgb(117, 52, 71);
-}
 
-.fonas {
-  width: 100%;
-  height: 93vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  z-index: 1;
-  display: none;
-  transition: all 0.3s ease-in;
-}
-.fonasActice {
-  display: block;
-  transition: all 0.3s ease-in;
+.veikia{
+  text-decoration: underline;
 }
 
 /* AT MEDIA  tablet*/
 
 @media screen and (max-width: 1200px) {
+
+
+
   body {
     overflow: hidden;
   }
@@ -264,7 +242,6 @@
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     list-style: none;
-    z-index: 3;
   }
   .headerNav .navi1 .item1 {
     width: 80%;
@@ -283,16 +260,22 @@
     letter-spacing: 3px;
     font-style: italic;
     font-size: 18px;
-  }
+     }
 
   .headerNav .navi1 .item1 .dropDown1 {
     list-style: none;
     display: none;
+  
+    
+    
+    
   }
 
   .dropactive {
     display: block !important;
+    
   }
+
 
   .navActive {
     transform: translateX(0%) !important;
@@ -336,37 +319,43 @@
     width: 100%;
   }
 
+
   /* hover efektai  */
 
-  .headerNav .navi1 .item1:hover {
+  .headerNav .navi1 .item1:hover{
     border-right: 5px solid black;
     transition: all 0.1s ease-in-out;
-    transform: translateX(-5px) !important;
+    transform: translateX(-5px)!important;
+
+   
+   
   }
 
-  .headerNav .navi1 .item1:hover:nth-child(2) {
-    transform: translateX(0px) !important;
+  .headerNav .navi1 .item1:hover:nth-child(2){
+    transform: translateX(0px)!important;
     border-right: none;
   }
 
   .headerNav .navi1 .item1:hover:nth-child(2) .fa-solid {
     opacity: 1;
     transition: all 0.5s ease-in-out;
+
   }
 
   .navi1 .dropItem1:hover {
     transform: translateX(-5px);
     border-right: 3px solid black;
   }
-
-  .container-fluid.dukTurinys .turinys {
-    padding: 20px;
-    height: 88vh;
-    overflow: auto;
-  }
+  
 }
 
+
+
+
+
+
 /* phone */
+
 
 @media screen and (max-width: 600px) {
   .headerNav .navi1 {
@@ -421,11 +410,5 @@
   .headerNav .navBar {
     height: 12vh;
     width: 100%;
-  }
-
-  .container-fluid.dukTurinys .turinys {
-    padding: 20px;
-    height: 83vh;
-    overflow: auto;
   }
 }

@@ -1,3 +1,32 @@
+// tabai
+const tabai = () => {
+  const mygtukai = document.querySelectorAll(".btnT");
+const turinys = document.querySelectorAll(".turinys");
+const wraperis = document.querySelector(".wraperis");
+
+wraperis.addEventListener("click", (e) => {
+  const id = e.target.dataset.id; // targertina tik tuos kurie turi data-id
+  if (id) {
+    //jaigu objektas turi data-id kuris buvo priskirtas kitamajam id
+
+    //  nuimti klase veikia nuo visu mygtuku
+    mygtukai.forEach((myg) => {
+      myg.classList.remove("veikia"); // nuima nuo visu mygtuku klase veikia
+      e.target.classList.add('veikia'); // priskiria targetui klase veikia. targetas turi tureti data-id
+    });
+    turinys.forEach((tur)=>{
+      tur.classList.remove('veikia1'); // nuima klase veikia1 nuo visu turinys lauku
+
+    })
+    const tabas = document.getElementById(id); // priskiria targeta pagal kitama id.
+    tabas.classList.add('veikia1'); // priskiria klase veikia 1 turinio laukui suristam prie mygtuko per data-id
+  }
+});
+ 
+};
+
+
+
 // top navBar dropdown menu
 
 const navDrop = () => {
@@ -27,6 +56,7 @@ const navSlide = () => {
     setTimeout(() => {
       fonas.classList.toggle("fonasActice");
     }, 500)
+    
 
     // linku animacija
 
@@ -62,6 +92,7 @@ const app = () => {
   navDrop();
   navSlide();
   sidenavDrop();
+  tabai();
 };
 
 app();

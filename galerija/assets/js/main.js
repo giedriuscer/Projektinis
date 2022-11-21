@@ -1,11 +1,13 @@
 var splide = new Splide( '#main-carousel', {
   pagination: false,
+  arrows:false,
 } );
 
 
 
 var thumbnails = document.getElementsByClassName( 'thumbnail' );
 var current;
+
 
 for ( var i = 0; i < thumbnails.length; i++ ) {
   initThumbnail( thumbnails[ i ], i );
@@ -57,11 +59,17 @@ const navSlide = () => {
   const burgeris = document.querySelector(".burgeris");
   const sNavBar = document.querySelector(".navi1");
   const navLinks = document.querySelectorAll(".item1");
+  const fonas = document.querySelector(".fonas");
 
   // toggle side nav
 
   burgeris.addEventListener("click", () => {
     sNavBar.classList.toggle("navActive");
+
+    setTimeout(() => {
+      fonas.classList.toggle("fonasActice");
+    }, 500)
+    
 
     // linku animacija
 

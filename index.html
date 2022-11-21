@@ -17,7 +17,7 @@
     "
     />
     <!-- mano css -->
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/707b3669db.js"
@@ -34,41 +34,41 @@
   <body id="1">
     <div class="headerNav">
       <div class="navBar">
-        <div class="logo">Pelėdžiukų Desertinė</div>
+        <div class="logo" onclick="window.location.href='./index.html'">Pelėdžiukų Desertinė</div>
 
         <!-- TOP NAV -->
         <ul class="navi p-0 m-0">
-          <li class="item"><a href="#">Pradžia</a></li>
+          <li class="item"><a href="./index.html">Pradžia</a></li>
           <li class="item drp">
             <a href="#">Desertai<i class="fa-solid fa-caret-down"></i></a>
             <ul class="dropDown activeDrp">
-              <li class="dropItem"><a href="#">Tortai</a></li>
-              <li class="dropItem"><a href="#">Keksiukai</a></li>
-              <li class="dropItem"><a href="#">Macarons</a></li>
+              <li class="dropItem"><a href="./desertai/tortai/tortai.html">Tortai</a></li>
+              <li class="dropItem"><a href="./desertai/Keksiukai/keksiukai.html">Keksiukai</a></li>
+              <li class="dropItem"><a href="./desertai/Macarons/makarons.html">Macarons</a></li>
             </ul>
           </li>
-          <li class="item"><a href="/galerija/galerija.html">Galerija</a></li>
-          <li class="item"><a href="/d.u.k/d.u.k.html">D.U.K</a></li>
+          <li class="item"><a href="./galerija/galerija.html">Galerija</a></li>
+          <li class="item"><a href="./d.u.k/d.u.k.html">D.U.K</a></li>
           <li class="item">
-            <a href="/kontaktai/kontaktai.html">Kontaktai</a>
+            <a href="./kontaktai/kontaktai.html">Kontaktai</a>
           </li>
         </ul>
 
         <!-- SIDE NAV -->
         <ul class="navi1">
-          <li class="item1"><a href="#">Pradžia</a></li>
+          <li class="item1"><a href="./index.html">Pradžia</a></li>
           <li class="item1 drp1">
             <a href="#">Desertai<i class="fa-solid fa-caret-down"></i></a>
             <ul class="dropDown1 p-0">
-              <li class="dropItem1"><a href="#">Tortai</a></li>
-              <li class="dropItem1"><a href="#">Keksiukai</a></li>
-              <li class="dropItem1"><a href="#">Macarons</a></li>
+              <li class="dropItem1"><a href="./desertai/tortai/tortai.html">Tortai</a></li>
+              <li class="dropItem1"><a href="./desertai/Keksiukai/keksiukai.html">Keksiukai</a></li>
+              <li class="dropItem1"><a href="./desertai/Macarons/makarons.html">Macarons</a></li>
             </ul>
           </li>
-          <li class="item1"><a href="/galerija/galerija.html">Galerija</a></li>
-          <li class="item1"><a href="/d.u.k/d.u.k.html">D.U.K</a></li>
+          <li class="item1"><a href="./galerija/galerija.html">Galerija</a></li>
+          <li class="item1"><a href="./d.u.k/d.u.k.html">D.U.K</a></li>
           <li class="item1">
-            <a href="/kontaktai/kontaktai.html">Kontaktai</a>
+            <a href="./kontaktai/kontaktai.html">Kontaktai</a>
           </li>
         </ul>
         <div class="burgeris">
@@ -108,7 +108,7 @@
         </li>
       </ul>
     </div>
-
+    <div class="fonas"></div>
     <!-- MODALAS MENIU-->
     <div class="modalas" id="modalas">
       <div class="modalas-wraperis">
@@ -272,7 +272,7 @@
         <div class="stiklas">
           <button class="heroBtn" type="submit">MENIU</button>
           <img
-            src="/assets/images/logoooo.png"
+            src="./assets/images/logoooo.png"
             alt="heroLogo"
             class="heroLogo"
           />
@@ -318,7 +318,7 @@
                 <div class="pavykoTurinys">
                   <p>
                     Ačiū! <br />
-                    greitu metu susisieksime
+                    susisieksime per 1-2 d.d.
                     <i class="fa-light fa-cake-slice"></i>
                   </p>
                 </div>
@@ -509,7 +509,6 @@
                               class="pacekintas"
                             />kita</label
                           >
-                          
                         </div>
                       </div>
                     </div>
@@ -532,12 +531,12 @@
               </div>
             </div>
             <div class="modalasV-footer">
-              <p class="uzsakymoTipas">
-              </p>
+              <p class="uzsakymoTipas"></p>
               <button type="submit" class="modalasVbtn">Siųsti</button>
               <div>
                 <p class="errorMsg">
-                  <strong style="color: red; font-size:15px">*</strong>Užpildykite <strong style="color: red">raudonai </strong>
+                  <strong style="color: red; font-size: 15px">*</strong
+                  >Užpildykite <strong style="color: red">raudonai </strong>
                   <br />
                   pažymėtus laukelius
                 </p>
@@ -590,7 +589,9 @@
                           explicabo ducimus nesciunt quaerat debitis vel
                           quibusdam distinctio iure quidem.
                         </p>
-                        <button class="sl1Btn2" onclick="Mdlowlslide2()">UŽsakyti</button>
+                        <button class="sl1Btn2" onclick="Mdlowlslide2()">
+                          UŽsakyti
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -616,7 +617,9 @@
                           recusandae ex quibusdam accusamus iusto quaerat
                           reprehenderit fugit nihil modi animi.
                         </p>
-                        <button class="sl1Btn3" onclick="Mdlowlslide3();">Užsakyti</button>
+                        <button class="sl1Btn3" onclick="Mdlowlslide3();">
+                          Užsakyti
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -697,6 +700,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- mano js -->
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

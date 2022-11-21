@@ -37,12 +37,16 @@ const navSlide = () => {
   const sNavBar = document.querySelector(".navi1");
   const navLinks = document.querySelectorAll(".item1");
   const bdscrol = document.querySelector("body");
+  const fonas = document.querySelector(".fonas");
 
   // toggle side nav
 
   burgeris.addEventListener("click", () => {
     sNavBar.classList.toggle("navActive");
     bdscrol.classList.toggle("stopScrollY");
+    setTimeout(() => {
+      fonas.classList.toggle("fonasActice");
+    }, 500)
     console.log(bdscrol);
     // linku animacija
 
